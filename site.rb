@@ -7,5 +7,8 @@
    "Ciao!"
  get '/' do
    erb :index
+ ENV['PORT'] ||= '4000'
+ set :port, ENV['PORT']
  end
+
 
